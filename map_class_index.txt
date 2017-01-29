@@ -1,0 +1,5 @@
+horse 0
+flower 1
+elephant 2
+dinosaur 3
+bus 4
