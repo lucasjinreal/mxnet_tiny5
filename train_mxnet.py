@@ -56,7 +56,7 @@ def find_checkpoint(prefix):
         prefix_name = prefix.split('/')[-1]
     else:
         prefix_name = prefix
-    model_path = '/'.join(prefix.split('/')[0:-1])
+        model_path = '/'.join(prefix.split('/')[0:-1])
     if os.path.isdir(model_path):
         logging.info('models path at {0}'.format(model_path))
         logging.info('searching params and symbols...')
@@ -137,12 +137,4 @@ if __name__ == '__main__':
             epoch_end_callback=checkpoint,
             arg_params=arg_params,
             aux_params=aux_params,
-            begin_epoch=n_epoch_load
-        )
-
-
-
-
-
-
-
+            begin_epoch=n_epoch_load)
